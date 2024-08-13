@@ -18,7 +18,7 @@ const UpdatePet = () => {
 
     useEffect(() => {
         // Cargar los datos actuales de la mascota
-        axios.get(`http://localhost:8000/api/pets/` + id)
+        axios.get(`https://pets-backend-beta.vercel.app/api/pets/` + id)
             .then(response => {
                 setPetData(response.data);
             })
@@ -36,7 +36,7 @@ const UpdatePet = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/pets/` + id, petData)
+        axios.put(`https://pets-backend-beta.vercel.app/api/pets/` + id, petData)
             .then(response => {
                 console.log('Mascota actualizada:', response.data);
             })

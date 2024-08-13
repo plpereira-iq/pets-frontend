@@ -13,7 +13,7 @@ const AllPets = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/pets")
+        axios.get("https://pets-backend-beta.vercel.app/api/pets")
             .then((allPets) => {
                 // console.log(allPets);
                 console.log(allPets.data);

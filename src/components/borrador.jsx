@@ -1,5 +1,5 @@
 const deletePetReq = (petId) => {
-    axios.delete(`http://localhost:8000/api/pets/${petId}`)
+    axios.delete(`https://pets-backend-beta.vercel.app/api/pets/${petId}`)
     .then(res =>{
         console.log(res);
         setPets(pets.filter(pet => pet._id !== petId))

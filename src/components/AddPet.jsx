@@ -21,7 +21,7 @@ const AddPet = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        axios.post('http://localhost:8000/api/pets', {
+        axios.post('https://pets-backend-beta.vercel.app/api/pets', {
             Name,
             PetType,
             Description,
